@@ -3,7 +3,6 @@
 
 when we want to use docker in production, based on docker docs suggestion we should install docker from official repository.
 As repeating this task can be tideous I have created a script which installs docker from official repository with zero touch.
-The output of the 
 
 ### **How to use this script:**
 #### Clone this repo:
