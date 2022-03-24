@@ -9,9 +9,10 @@ As repeating this task can be tideous I have created a script which installs doc
 `git clone https://github.com/shahinam2/docker-easy-install-on-ubuntu.git`
 
 #### Then make the script executable:
-`cd docker-easy-install-on-ubuntu`
-
-`chmod +x docker-install.sh`
+```
+cd docker-easy-install-on-ubuntu
+chmod +x docker-install.sh
+```
 
 #### Execute it:
 `./docker-install.sh`
@@ -21,14 +22,16 @@ As repeating this task can be tideous I have created a script which installs doc
 #### the log file is created next to your docker-install.sh as **docker-install.log**
 
 
-### Notes:
-#### 1. For extra convenience the current user is added to docker group
-#### 2. test dockers functionality without sudo
+### **Notes:**
+#### 1. For extra convenience the current user is added to docker group. so you don't have to type sudo every time.
+#### 2. Test dockers functionality without sudo
 `docker run hello-world`
-#### if it works, it means that the installaion was successfull.
+#### If it works, it means that the installaion was successfull.
 #### 3. the following are extra commands executed and logged after installing docker:
-`sudo dpkg -l | grep -i docker`
-`sudo docker --version`
-`sudo docker version`
-`sudo docker system info`
+```
+sudo dpkg -l | grep -i docker
+sudo docker --version
+sudo docker version
+sudo docker system info
+```
 
