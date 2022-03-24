@@ -5,16 +5,22 @@ when we want to use docker in production, based on docker docs suggestion we sho
 As repeating this task can be tideous I have created a script which installs docker from official repository with zero touch.
 
 ### **How to use this script:**
-#### Clone this repo:
+#### 0. First make sure that you are using one of the following ubuntu versions:
+- Ubuntu Impish 21.10
+- Ubuntu Hirsute 21.04
+- Ubuntu Focal 20.04 (LTS)
+- Ubuntu Bionic 18.04 (LTS)
+
+#### 1. Clone this repo:
 `git clone https://github.com/shahinam2/docker-easy-install-on-ubuntu.git`
 
-#### Then make the script executable:
+#### 2. Then make the script executable:
 ```
 cd docker-easy-install-on-ubuntu
 chmod +x docker-install.sh
 ```
 
-#### Execute it:
+#### 3. Execute it:
 `./docker-install.sh`
 #### at the end of executaion your system will reboot.
 
