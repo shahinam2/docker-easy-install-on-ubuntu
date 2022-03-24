@@ -10,6 +10,7 @@ The output of the
 `git clone https://github.com/shahinam2/docker-easy-install-on-ubuntu.git`
 
 #### Then make the script executable:
+`cd docker-easy-install-on-ubuntu`
 `chmod +x docker-install.sh`
 
 #### Execute it:
