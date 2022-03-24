@@ -1,11 +1,11 @@
 # docker-easy-install-on-ubuntu
 Install docker on ubuntu from official repository
 
-Based on docker documentation suggestion we should install docker from official repo when we want to use docker in production.
-As repeating this task can be tideous I have created a script which installs docker from official repository.
+when we want to use docker in production, based on docker docs suggestion we should install docker from official repository.
+As repeating this task can be tideous I have created a script which installs docker from official repository with zero touch.
 The output of the 
 
-How to use this script:
+**How to use this script:**
 first create a file named docker-install.sh
 nano docker-install.sh
 
