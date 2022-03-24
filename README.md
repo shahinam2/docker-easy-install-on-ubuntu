@@ -20,7 +20,7 @@ cd docker-easy-install-on-ubuntu
 chmod +x docker-install.sh
 ```
 
-#### 3. Execute it:
+#### 3. Run it:
 `./docker-install.sh`
 #### at the end of executaion your system will reboot.
 
