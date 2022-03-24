@@ -5,7 +5,7 @@ when we want to use docker in production, based on docker docs suggestion we sho
 As repeating this task can be tideous I have created a script which installs docker from official repository with zero touch.
 
 ### **How to use this script:**
-#### 0. First make sure that you are using one of the following ubuntu versions:
+#### 0. First make sure that you are using one of the following versions of ubuntu and its a clean install:
 - Ubuntu Impish 21.10
 - Ubuntu Hirsute 21.04
 - Ubuntu Focal 20.04 (LTS)
