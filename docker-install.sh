@@ -36,26 +36,26 @@ sleep 2
 
 # verify the presence of docker packages
 echo -e "\n=======================================" >> docker-install.log
-echo "verify the presence of docker packages:" >> docker-install.log
+echo "Verify the presence of docker packages:" >> docker-install.log
 echo "=======================================" >> docker-install.log
 sudo dpkg -l | grep -i docker >> docker-install.log
 
 # verify the installed software version
 echo -e "\n=======================================" >> docker-install.log
-echo "verify the installed software version" >> docker-install.log
+echo "Verify docker version" >> docker-install.log
 echo "=======================================" >> docker-install.log
 sudo docker --version >> docker-install.log
 
 # get the details of server/client model:
 echo -e "\n=======================================" >> docker-install.log
-echo "get the details of server/client model" >> docker-install.log
+echo "Verify the server/client model infos" >> docker-install.log
 echo "=======================================" >> docker-install.log
 sudo docker version >> docker-install.log
 
 # to show the information about the docker host:
 # number of running containers, number of images, default registry, etc...
 echo -e "\n=======================================" >> docker-install.log
-echo "information about the docker host" >> docker-install.log
+echo "Verify the docker host infos" >> docker-install.log
 echo "=======================================" >> docker-install.log
 sudo docker system info >> docker-install.log
 
