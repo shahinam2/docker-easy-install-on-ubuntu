@@ -1,12 +1,5 @@
 #!/bin/bash
-# as installing from repo is recommended, the following guide is based on using official repo:
-# the following can be installed on the following ubuntu versions:
-# Ubuntu Impish 21.10
-# Ubuntu Hirsute 21.04
-# Ubuntu Focal 20.04 (LTS)
-# Ubuntu Bionic 18.04 (LTS)
-
-# the following script assumes that you are using a clean install of ubuntu
+# the following script assumes that you are using a clean install of Ubuntu.
 
 # setups the repo:
 sudo apt-get update > /dev/null
