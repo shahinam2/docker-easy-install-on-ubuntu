@@ -6,7 +6,7 @@ As you already know there is a convenience script for development environment bu
 So as repeating the docker install from repo can be tideous I have created a script which installs docker from official repository.
 
 ### **How to use this script:**
-#### First make sure that you are using one of the following versions of ubuntu and its a clean install:
+#### First make sure you are using one of the following versions of ubuntu and its a clean install:
 - Ubuntu Impish 21.10
 - Ubuntu Hirsute 21.04
 - Ubuntu Focal 20.04 (LTS)
