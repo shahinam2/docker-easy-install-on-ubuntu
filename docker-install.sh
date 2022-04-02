@@ -60,6 +60,12 @@ echo "======================================="
 sudo usermod -aG docker $USER
 sleep 2
 
+# Informing the user about the log file
+echo -e "\n======================================="
+echo "Installation logs are stored in ./docker-install.log"
+echo "======================================="
+sleep 2
+
 # reboot the system
 echo -e "\n======================================="
 echo "Rebooting system in 5 seconds"
