@@ -6,25 +6,25 @@ sudo apt-get update &> /dev/null
 echo -e "\n======================================="
 echo "Updating apt & setting up the environment "
 echo "======================================="
-sudo apt-get install ca-certificates curl gnupg lsb-release -y > /dev/null
+sudo apt-get install ca-certificates curl gnupg lsb-release -y &> /dev/null
 
 # Add Docker’s official GPG key:
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg > /dev/null
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg &> /dev/null
 
 # Use the following command to set up the stable repository.
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list &> /dev/null
 
 # Install Docker Engine
-sudo apt-get update > /dev/null
+sudo apt-get update &> /dev/null
 echo -e "\n======================================="
 echo "Installing Docker"
 echo "======================================="
 echo "=======================================" > docker-install.log
 echo "Installation logs" >> docker-install.log
 echo "======================================="  >> docker-install.log
-sudo apt-get install docker-ce docker-ce-cli containerd.io -y >> docker-install.log
+sudo apt-get install docker-ce docker-ce-cli containerd.io -y &>> docker-install.log
 sleep 2
 
 # verify the presence of docker packages
