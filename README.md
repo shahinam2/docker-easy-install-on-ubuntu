@@ -8,7 +8,7 @@ So as repeating the docker install from repo can be tideous I have created a scr
 ### What will be installed:
 - Docker Engine (with docker swarm included)
 - Docker Cli
-- Docker Compose
+- Docker Compose v2
 
 ### **How to use this script:**
 First make sure you are using one of the following versions of ubuntu and its a clean install:
