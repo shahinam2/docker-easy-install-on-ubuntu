@@ -86,7 +86,7 @@ sudo docker system info >> docker-install.log
 echo -e "\n=======================================" >> docker-install.log
 echo "Verify the docker compose version" >> docker-install.log
 echo "=======================================" >> docker-install.log
-sudo docker compose version >> docker-install.log
+sudo docker-compose version >> docker-install.log
 
 ####################################################
 ###################System Reboot####################
