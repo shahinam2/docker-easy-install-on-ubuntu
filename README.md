@@ -5,14 +5,19 @@ When we want to use docker in production, based on docker's docs suggestion we s
 As you already know there is a convenience script for development environment but there is no convenience script for production.
 So as repeating the docker install from repo can be tideous I have created a script which installs docker from official repository.
 
+### What will be installed:
+- Docker Engine (with docker swarm included)
+- Docker Cli
+- Docker Compose
+
 ### **How to use this script:**
-#### First make sure you are using one of the following versions of ubuntu and its a clean install:
+First make sure you are using one of the following versions of ubuntu and its a clean install:
 - Ubuntu Impish 21.10
 - Ubuntu Hirsute 21.04
 - Ubuntu Focal 20.04 (LTS)
 - Ubuntu Bionic 18.04 (LTS)
 
-#### Copy and paste the following script which will:
+### Copy and paste the following script which will:
 1. Clone this repo
 2. Make the script executable
 3. Run 
