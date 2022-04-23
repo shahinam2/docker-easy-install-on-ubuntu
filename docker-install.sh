@@ -31,22 +31,22 @@ echo "======================================="  >> docker-install.log
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y &>> docker-install.log
 sleep 2
 
-# installing docker compose version 2:
-echo -e "\n======================================="
-echo "Installing Docker Compose V2"
-echo "======================================="
-DOCKER_CONFIG=${DOCKER_CONFIG:-/usr/local/lib/docker/cli-plugins}
-mkdir -p $DOCKER_CONFIG/cli-plugins
-curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose &>/dev/null
-chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
-sleep 2
-
 # To manage docker as non-root user
 echo -e "\n======================================="
 echo "Adding the current user to docker group"
 echo "======================================="
 # sudo groupadd docker
 sudo usermod -aG docker $USER
+sleep 2
+
+# installing docker compose version 2:
+echo -e "\n======================================="
+echo "Installing Docker Compose V2"
+echo "======================================="
+DOCKER_CONFIG=/usr/local/lib/docker/cli-plugins
+sudo mkdir -p $DOCKER_CONFIG/cli-plugins
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose &>/dev/null
+sudo chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 sleep 2
 
 # Informing the user about the log file
