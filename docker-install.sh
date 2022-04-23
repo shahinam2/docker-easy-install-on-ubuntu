@@ -2,7 +2,7 @@
 # the following script assumes that you are using a clean install of Ubuntu.
 
 # setups the repo:
-sudo apt-get update > /dev/null
+sudo apt-get update &> /dev/null
 echo -e "\n======================================="
 echo "Updating apt & setting up the environment "
 echo "======================================="
