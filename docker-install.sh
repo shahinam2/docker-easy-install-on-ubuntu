@@ -68,25 +68,25 @@ sudo dpkg -l | grep -i docker >> docker-install.log
 echo -e "\n=======================================" >> docker-install.log
 echo "Verify docker version" >> docker-install.log
 echo "=======================================" >> docker-install.log
-docker --version >> docker-install.log
+sudo docker --version >> docker-install.log
 
 # get the details of server/client model:
 echo -e "\n=======================================" >> docker-install.log
 echo "Verify the server/client model infos" >> docker-install.log
 echo "=======================================" >> docker-install.log
-docker version >> docker-install.log
+sudo docker version >> docker-install.log
 
 # to show the information about the docker host:
 # number of running containers, number of images, default registry, etc...
 echo -e "\n=======================================" >> docker-install.log
 echo "Verify the docker host infos" >> docker-install.log
 echo "=======================================" >> docker-install.log
-docker system info >> docker-install.log
+sudo docker system info >> docker-install.log
 
 echo -e "\n=======================================" >> docker-install.log
 echo "Verify the docker compose version" >> docker-install.log
 echo "=======================================" >> docker-install.log
-docker compose version >> docker-install.log
+sudo docker compose version >> docker-install.log
 
 ####################################################
 ###################System Reboot####################
