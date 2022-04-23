@@ -17,7 +17,11 @@ So as repeating the docker install from repo can be tideous I have created a scr
 2. Make the script executable
 3. Run 
 ```
-sudo apt install git -y && git clone https://github.com/shahinam2/docker-easy-install-on-ubuntu.git && cd docker-easy-install-on-ubuntu && chmod +x docker-install.sh && ./docker-install.sh
+sudo apt install git -y &>/dev/null \
+&& git clone https://github.com/shahinam2/docker-easy-install-on-ubuntu.git &>/dev/null \
+&& cd docker-easy-install-on-ubuntu \
+&& chmod +x docker-install.sh \
+&& ./docker-install.sh
 ```
 
 ### **Notes:**
