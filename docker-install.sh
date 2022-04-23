@@ -43,10 +43,9 @@ sleep 2
 echo -e "\n======================================="
 echo "Installing Docker Compose V2"
 echo "======================================="
-DOCKER_CONFIG=/usr/local/lib/docker/cli-plugins
-sudo mkdir -p $DOCKER_CONFIG/cli-plugins
-sudo curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose &>/dev/null
-sudo chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+DOCKER_CONFIG=/usr/bin
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/docker-compose &>/dev/null
+sudo chmod +x $DOCKER_CONFIG/docker-compose
 sleep 2
 
 # Informing the user about the log file
