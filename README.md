@@ -21,6 +21,7 @@ First make sure you are using one of the following versions of ubuntu and its a 
 1. Clone this repo
 2. Make the script executable
 3. Run 
+4. wait!
 ```
 sudo apt install git -y &>/dev/null \
 && git clone https://github.com/shahinam2/docker-easy-install-on-ubuntu.git &>/dev/null \
